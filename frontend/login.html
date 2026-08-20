@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+         * {
+            text-transform: capitalize;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        form {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-direction: column;
+            width: 30em;
+            height: 35rem;
+            border-radius: 20px;
+            box-shadow: 0 0 3px grey;
+        }
+
+        label {
+            font-size: 1.5em;
+        }
+
+        input {
+            font-size: 1.2em;
+        }
+
+        #submit {
+            background-color: red;
+            border-radius: 20px;
+            border: none;
+            padding: .5rem 3rem;
+            color: white;
+        }
+
+        #submit:hover {
+            background-color: black;
+        }
+
+        h1 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>logIn</h1>
+        <label for="email">enter your email</label>
+        <input type="email" name="" id="email">
+        <label for="password">enter your password</label>
+        <input type="password" name="" id="password">
+        <label for="submit">submit form</label>
+        <input type="submit" name="" id="submit">
+    </form>
+</body>
+<script src="./login.js"></script>
+</html>

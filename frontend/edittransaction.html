@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit transaction</title>
+     <style>
+        * {
+            text-transform: capitalize;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        ::placeholder{
+            font-size: 14px;
+         
+        }
+
+        form {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-direction: column;
+            width: 30em;
+            height: 35rem;
+            border-radius: 20px;
+            box-shadow: 0 0 3px grey;
+        }
+
+        label {
+            font-size: 1.5em;
+        }
+       
+
+        input {
+            font-size: 1.2em;
+        }
+
+        #save {
+            background-color: red;
+            border-radius: 20px;
+            border: none;
+            padding: .5rem 3rem;
+            color: white;
+        }
+
+        #save:hover {
+            background-color: black;
+        }
+
+        h1 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>edit your transactions</h1>
+        <label for="type">transaction type</label>
+        <select name="" id="type">
+            <option value="">select transaction type</option>
+            <option  value="income">income</option>
+            <option value="expense">expense</option>
+        </select>
+        <label for="amount">amount</label>
+        <input placeholder="add amount " type="number" name="" id="amount">
+        <label for="category">category</label>
+        <select name="" id="category">
+            <option value="">select category</option>
+            <option  value="food">food</option>
+            <option value="clothes">clothes</option>
+            <option value="transport">transport</option>
+            <option value="shopping">shpping</option>
+            <option value="bills">bills</option>
+            <option value="grocery">grocery</option>
+            <option value="salary">salary</option>
+            <option value="others">others</option>
+        </select>
+        <label for="date">date</label>
+        <input type="date" name="" id="date">
+        <label for="description">description</label>
+        <input placeholder="add info about your transaction" type="text" name="" id="description">
+        <label for="save">save your transaction</label>
+        <input type="submit" name="" id="save">
+    </form>
+</body>
+<script src="./edittransaction.js"></script>
+</html>
