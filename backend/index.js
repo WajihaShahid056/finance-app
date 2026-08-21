@@ -37,7 +37,5 @@ app.use("/", profileData);
 app.use("/",transaction);
 app.use("/",budget);
 app.use("/",dashboard)
-if (require.main === module) {
-    app.listen(port, () => {console.log("server started");});
-}
-module.exports = app;
+  app.listen(port, () => {console.log("server started");});
+
