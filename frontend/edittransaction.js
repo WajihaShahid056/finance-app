@@ -29,7 +29,7 @@ save.addEventListener("click", async function (e) {
       
             const params = new URLSearchParams(window.location.search);
             const id = params.get("id");
-            const req = await fetch(`http://localhost:1000/transaction/${id}`, {
+            const req = await fetch(`/transaction/${id}`, {
                 method: "PUT",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formValues)

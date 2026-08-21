@@ -26,7 +26,7 @@ save.addEventListener("click", async function (e) {
                 date: date.value.trim(),
                 description: description.value.trim()
             };
-            const req = await fetch("http://localhost:1000/transaction", {
+            const req = await fetch("/transaction", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formValues)

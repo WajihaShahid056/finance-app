@@ -26,7 +26,7 @@ submit.addEventListener("click", async function (e) {
             formData.append("name", name.value.trim());
             formData.append("email", email.value.trim());
             formData.append("password", password.value.trim());
-            const req = await fetch("http://localhost:1000/signup", {
+            const req = await fetch("/signup", {
                 method: "POST",
                 body: formData
             });

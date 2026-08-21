@@ -13,7 +13,7 @@ save.addEventListener("click", async function (e) {
               month:month.value.trim(),
               budget:budget.value.trim()
             };
-            const req = await fetch("http://localhost:1000/budget", {
+            const req = await fetch("/budget", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formValues)

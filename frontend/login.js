@@ -20,7 +20,7 @@ submit.addEventListener("click", async function (e) {
                 password: password.value.trim()
 
             };
-            const req = await fetch("http://localhost:1000/login", {
+            const req = await fetch("/login", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formValues)
