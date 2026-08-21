@@ -1,7 +1,7 @@
 const express=require("express");
 const app=express();
 require("dotenv").config();
-const port=process.env.SERVER_PORT;
+const port = process.env.PORT || process.env.SERVER_PORT || 2000;
 const route=require("./routes/authroute");
 const profileData=require("./routes/profile");
 const transaction=require("./routes/transaction");
@@ -13,7 +13,11 @@ const sessionStore = new mySqlStore({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
     database: process.env.DB_NAME,
-    password: process.env.DB_PASSWORD
+    port: process.env.DB_PORT,
+    password: process.env.DB_PASSWORD,
+    ssl: {
+        rejectUnauthorized: false
+    }
 });
 app.use(session({
   secret: process.env.SESSION_SECRET,
